@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing & Booking — Gerry O’Neill Heating & Plumbing</title><link rel="stylesheet" href="styles.css"></head><body>
+
+<header class="site-header">
+  <img src="blue-spanner-logo.png" alt="Logo" class="logo" />
+  <div class="hero">
+    <h1>Pricing & Booking</h1>
+    <p>Dublin’s trusted plumbing & heating — 24/7 emergencies</p>
+  </div>
+  
+    <nav class="top-nav">
+      <a href="index.html" >Home</a>
+      <a href="pricing.html" class="active">Pricing & Booking</a>
+      <a href="services.html" >Services</a>
+      <a href="about.html" >About</a>
+      <a href="contact.html" >Contact</a>
+      <a href="gallery.html" >Gallery</a>
+      <a href="reviews.html" >Reviews</a>
+    </nav>
+    
+</header>
+
+<main class="container">
+<section class="card"><h2>Products</h2><p class="muted">Select parts you supply/install. Add to estimate.</p>
+<div class="grid">
+<article class="product" data-name="Kitchen Tap (Chrome)" data-price="129"><h3>Kitchen Tap (Chrome)</h3><p class="muted">Supply & fit</p><p class="price">€129</p><button class="btn add">Add to estimate</button></article>
+<article class="product" data-name="Toilet Syphon Kit" data-price="59"><h3>Toilet Syphon Kit</h3><p class="muted">Supply</p><p class="price">€59</p><button class="btn add">Add to estimate</button></article>
+<article class="product" data-name="Radiator (600×1000)" data-price="179"><h3>Radiator (600×1000)</h3><p class="muted">Supply</p><p class="price">€179</p><button class="btn add">Add to estimate</button></article>
+<article class="product" data-name="Combi Boiler (A‑rated)" data-price="1899"><h3>Combi Boiler (A‑rated)</h3><p class="muted">Supply</p><p class="price">€1,899</p><button class="btn add">Add to estimate</button></article>
+</div></section>
+<section class="card"><h2>Fixed‑Price Jobs</h2>
+<ul class="list">
+<li><div><strong>Boiler Service</strong><div class="muted small">Annual service, safety check</div></div><div class="row-end"><span class="tag">€99</span><button class="btn add-job" data-name="Boiler Service" data-price="99">Add</button></div></li>
+<li><div><strong>Drain Unblock (standard)</strong><div class="muted small">Single domestic run</div></div><div class="row-end"><span class="tag">€120</span><button class="btn add-job" data-name="Drain Unblock" data-price="120">Add</button></div></li>
+<li><div><strong>Tap Replacement (labour)</strong><div class="muted small">Labour only</div></div><div class="row-end"><span class="tag">€80</span><button class="btn add-job" data-name="Tap Replacement (labour)" data-price="80">Add</button></div></li>
+</ul></section>
+<section class="card"><h2>Build Your Own Service</h2><p class="muted">Tick everything you need.</p>
+<div class="grid two">
+<div><h3>Common Services</h3>
+<label><input type="checkbox" class="svc" data-name="Leak Diagnosis" data-price="70"> Leak Diagnosis — €70</label>
+<label><input type="checkbox" class="svc" data-name="Pipe Repair (per joint)" data-price="60"> Pipe Repair (per joint) — €60</label>
+<label><input type="checkbox" class="svc" data-name="Radiator Bleed & Balance" data-price="50"> Radiator Bleed & Balance — €50</label>
+<label><input type="checkbox" class="svc" data-name="Shower Install (labour)" data-price="220"> Shower Install (labour) — €220</label>
+</div>
+<div><h3>Extras</h3>
+<label class="inline"><input type="checkbox" id="emergency"> Emergency / after‑hours (+€60)</label>
+<label class="inline">Travel (km): <input type="number" id="travel" min="0" value="0"> <span class="muted">€1/km</span></label>
+</div></div>
+<div class="actions"><button class="btn outline" id="add-services">Add selected to estimate</button></div>
+</section>
+<section class="card"><h2>Estimate</h2><div id="items"></div><div class="item" style="border:0"><strong>Total:</strong><strong id="total">€0</strong></div>
+<div class="actions">
+<a class="btn" id="pay-deposit" href="STRIPE_LINK_DEPOSIT" target="_blank" rel="noopener">Pay €50 deposit</a>
+<a class="btn" id="pay-boiler" href="STRIPE_LINK_BOILER" target="_blank" rel="noopener">Pay Boiler Service €99</a>
+<a class="btn outline" id="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp the estimate</a>
+</div>
+<p class="muted small">Replace Stripe links with your own Payment Links.</p>
+</section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Gerry O’Neill Heating & Plumbing • Serving all of Dublin • <a href="tel:+353871234567">087 123 4567</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body></html>
